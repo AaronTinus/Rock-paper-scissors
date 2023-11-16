@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Game.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kosugi+Maru&family=Stalinist+One&family=Unica+One&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+
+ <body>
+    <!-- I used a section as the platform for the game -->
+    <section class="game">
+        <!-- The title in its own div without an h1 element trying different approaches -->
+        <div id="div1" class="title">Rock Paper Scissors</div>
+
+           <br>
+           <br>
+           <br>
+         <!-- three divs inside a div to create the three headings and input -->
+          <div id="div2" class="score"> 
+            <div class="playerScore">
+               <h2>Player</h2>
+               <p class="p-count count">0</p><!-- player score -->
+            </div> 
+            <div class="">
+               <h5>Moves</h5>
+               <h6>Remaining</h6>
+               <p class="movesleft">0</p><!-- moves remaining -->
+               <br>
+            </div>      
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p><!-- computer score -->
+            </div>
+          </div>
+
+           <br>
+           <br>
+           <br>
+         <!-- The div created for results and welcoome statement  -->
+            <div id="" class="" >
+                <p class="result" ></p>
+                <p id="demo" ></p>
+            </div>
+           <!-- The div containing the three button options for the game -->
+            <div class="options">
+                <button id="play" class="rock">Rock</button>
+                <button id="play" class="paper">Paper</button>
+                <button id="play" class="scissor">Scissors</button> 
+            </div>
+           <!-- Restart button to start the game over -->
+            <button class="reload"></button> 
+            <div class="move">Choose your move</div> 
+
+    </section>
+            <!-- The start button and the reset button -->
+            <button id="start" class="" onclick="stopColor()">START</button> 
+            <div class="time"><span><button class="onoff">RESET</button></span></div>
+           <br>
+              <span id="clock"></span> <!-- display for the clock -->
+
+              <!-- I used two seperate files to practice that very thing and because it got very large -->
+              <script src="Game.js"></script>
+              <script src="Game1.js"></script>
+ </body>
+</html>
